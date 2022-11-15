@@ -5,7 +5,7 @@ unit TestCase1;
 interface
 
 uses
-  Classes, SysUtils, fpcunit, testutils, testregistry;
+  Classes, SysUtils, fpcunit, testutils, testregistry, Unit2;
 
 type
 
@@ -15,6 +15,7 @@ type
     procedure TearDown; override;
   published
     procedure TestHookUp;
+    procedure AddClient;
   end;
 
 implementation
@@ -22,6 +23,12 @@ implementation
 procedure TTestCase1.TestHookUp;
 begin
   Fail('Напишите ваш тест');
+end;
+
+procedure TTestCase1.AddClient;
+begin
+  Form2.Edit1.Text:=true;
+  //Fail('Напишите ваш тест');
 end;
 
 procedure TTestCase1.SetUp;

@@ -27,7 +27,7 @@ end;
 
 procedure TTestCase1.AddClient;
 begin
-  Form2.Edit1.Text:=true;
+  //Form2.Edit1.Text:=true;
   //Fail('Напишите ваш тест');
 end;
 
