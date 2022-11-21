@@ -8,7 +8,8 @@ object Form5: TForm5
   ClientWidth = 616
   Color = clWhite
   DesignTimePPI = 120
-  LCLVersion = '2.0.10.0'
+  Position = poMainFormCenter
+  LCLVersion = '2.2.0.4'
   object Label1: TLabel
     Left = 241
     Height = 73
@@ -22,7 +23,6 @@ object Form5: TForm5
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold, fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Label2: TLabel
@@ -38,7 +38,6 @@ object Form5: TForm5
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Label3: TLabel
@@ -54,7 +53,6 @@ object Form5: TForm5
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Label4: TLabel
@@ -70,7 +68,6 @@ object Form5: TForm5
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Edit1: TEdit
@@ -102,7 +99,7 @@ object Form5: TForm5
     TabOrder = 1
   end
   object BitBtn1: TBitBtn
-    Left = 340
+    Left = 152
     Height = 38
     Top = 376
     Width = 160
@@ -145,13 +142,13 @@ object Form5: TForm5
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
+    OnClick = Label5Click
   end
   object Button2: TButton
-    Left = 340
+    Left = 320
     Height = 38
-    Top = 432
+    Top = 376
     Width = 160
     Caption = 'Просмотр комнат'
     Font.CharSet = RUSSIAN_CHARSET

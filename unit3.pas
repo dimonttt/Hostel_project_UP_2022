@@ -94,6 +94,7 @@ SQLQuery1.ParamByName('u').AsString := Edit1.Text;
 SQLQuery1.ParamByName('r').AsString := Label7.Caption;
 SQLQuery1.ParamByName('o').AsString := Label8.Caption;
 SQLQuery1.ParamByName('t').AsString := Label9.Caption;
+
 SQLQuery1.ExecSQL;
 //SQLQuery1.execSQL; // выполняем запрос
 SQLTransaction1.Commit; //подтверждаем изменения в базе
@@ -154,8 +155,8 @@ SQLQuery1.SQL.Text := 'insert into DistributionOfRooms(Room,Client) VALUES (:p,:
 
 SQLQuery1.ParamByName('p').AsString := '4';// присваиваем записи текстовое значение
 SQLQuery1.ParamByName('u').AsString := Edit1.Text;
-SQLQuery1.ExecSQL;
-//SQLQuery1.execSQL; // выполняем запрос
+//SQLQuery1.ExecSQL;
+SQLQuery1.execSQL; // выполняем запрос
 SQLTransaction1.Commit; //подтверждаем изменения в базе
 Form4.Show;
 Form3.Hide;

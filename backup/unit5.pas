@@ -25,6 +25,7 @@ type
     procedure BitBtn1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Label5Click(Sender: TObject);
   private
 
   public
@@ -61,6 +62,11 @@ begin
        Form5.Hide;
      end
   else Label5.Caption:='Введен неверный логин или пароль!';
+
+end;
+
+procedure TForm5.Label5Click(Sender: TObject);
+begin
 
 end;
 

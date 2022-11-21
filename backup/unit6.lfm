@@ -1,7 +1,7 @@
 object Form6: TForm6
-  Left = 430
+  Left = 385
   Height = 565
-  Top = 185
+  Top = 244
   Width = 904
   Caption = 'Просмотр клиентов'
   ClientHeight = 565
@@ -9,7 +9,7 @@ object Form6: TForm6
   Color = clWhite
   DesignTimePPI = 120
   Position = poMainFormCenter
-  LCLVersion = '2.0.10.0'
+  LCLVersion = '2.2.0.4'
   object Label1: TLabel
     Left = 304
     Height = 73
@@ -23,7 +23,6 @@ object Form6: TForm6
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold, fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object DBGrid1: TDBGrid
@@ -50,7 +49,6 @@ object Form6: TForm6
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Button1: TButton
@@ -82,7 +80,6 @@ object Form6: TForm6
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Edit1: TEdit
@@ -111,7 +108,6 @@ object Form6: TForm6
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Button2: TButton
@@ -187,14 +183,15 @@ object Form6: TForm6
       '        select * from client'
     )
     Params = <>
+    Macros = <>
     UsePrimaryKeyAsKey = False
-    Left = 650
+    Left = 648
     Top = 50
   end
   object SQLTransaction1: TSQLTransaction
     Active = True
     Database = ODBCConnection1
-    Left = 722
+    Left = 720
     Top = 50
   end
   object DataSource1: TDataSource
@@ -205,11 +202,11 @@ object Form6: TForm6
   object ODBCConnection1: TODBCConnection
     Connected = True
     LoginPrompt = False
-    DatabaseName = 'hostel'
+    DatabaseName = 'hostelODBC'
     KeepConnection = False
     Transaction = SQLTransaction1
     UserName = 'admin'
-    Left = 810
-    Top = 50
+    Left = 808
+    Top = 48
   end
 end

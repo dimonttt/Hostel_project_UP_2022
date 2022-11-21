@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 380
+  Left = 989
   Height = 684
-  Top = 179
+  Top = 152
   Width = 897
   Caption = 'Выбор комнаты'
   ClientHeight = 684
@@ -9,7 +9,7 @@ object Form3: TForm3
   Color = clWhite
   DesignTimePPI = 120
   Position = poMainFormCenter
-  LCLVersion = '2.0.10.0'
+  LCLVersion = '2.2.0.4'
   object Label1: TLabel
     Left = 296
     Height = 73
@@ -23,7 +23,6 @@ object Form3: TForm3
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold, fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Button1: TButton
@@ -54,7 +53,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
     OnClick = Label2Click
   end
@@ -1222,7 +1220,6 @@ object Form3: TForm3
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Label4: TLabel
@@ -1238,7 +1235,6 @@ object Form3: TForm3
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsItalic]
-    ParentColor = False
     ParentFont = False
   end
   object Label5: TLabel
@@ -1246,7 +1242,6 @@ object Form3: TForm3
     Height = 1
     Top = 192
     Width = 1
-    ParentColor = False
   end
   object Label6: TLabel
     Left = 568
@@ -1260,7 +1255,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Label9: TLabel
@@ -1275,7 +1269,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Button3: TButton
@@ -1306,7 +1299,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Label8: TLabel
@@ -1321,7 +1313,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Label10: TLabel
@@ -1336,7 +1327,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Button4: TButton
@@ -1408,7 +1398,6 @@ object Form3: TForm3
     Height = 1
     Top = 446
     Width = 1
-    ParentColor = False
   end
   object Label12: TLabel
     Left = 16
@@ -1422,7 +1411,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
     OnClick = Label2Click
   end
@@ -1452,7 +1440,6 @@ object Form3: TForm3
     Font.Name = 'Calibri'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object DBGrid1: TDBGrid
@@ -1475,6 +1462,11 @@ object Form3: TForm3
     MaxIndexesCount = 4
     FieldDefs = <    
       item
+        Name = 'Code'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
         Name = 'Room'
         DataType = ftInteger
         Precision = -1
@@ -1487,15 +1479,13 @@ object Form3: TForm3
       end    
       item
         Name = 'StartDate'
-        DataType = ftString
+        DataType = ftDateTime
         Precision = -1
-        Size = 255
       end    
       item
         Name = 'EndDate'
-        DataType = ftString
+        DataType = ftDateTime
         Precision = -1
-        Size = 255
       end    
       item
         Name = 'People'
@@ -1509,8 +1499,9 @@ object Form3: TForm3
       '        select * from DistributionOfRooms'
     )
     Params = <>
+    Macros = <>
     UsePrimaryKeyAsKey = False
-    Left = 650
+    Left = 648
     Top = 8
   end
   object SQLTransaction1: TSQLTransaction
@@ -1522,7 +1513,7 @@ object Form3: TForm3
   object ODBCConnection1: TODBCConnection
     Connected = True
     LoginPrompt = False
-    DatabaseName = 'hostel'
+    DatabaseName = 'hostelODBC'
     KeepConnection = False
     Transaction = SQLTransaction1
     UserName = 'admin'
