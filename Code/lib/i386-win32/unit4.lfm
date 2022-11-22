@@ -1,0 +1,59 @@
+object Form4: TForm4
+  Left = 524
+  Height = 440
+  Top = 204
+  Width = 795
+  Caption = 'Подтверждение бронирования'
+  ClientHeight = 440
+  ClientWidth = 795
+  Color = clWindow
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 296
+    Height = 73
+    Top = 24
+    Width = 198
+    Caption = 'Хостел'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -60
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 105
+    Top = 160
+    Width = 734
+    Caption = '                         Бронирование прошло успешно!'#13#10'             В ближайшее время с Вами свяжется оператор.'#13#10'По всем вопросам обращаться по номеру 8 (912) 335 - 25 - 64'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clNavy
+    Font.Height = -28
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 296
+    Height = 62
+    Top = 336
+    Width = 192
+    Caption = 'Главная страница'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+end
